@@ -15,8 +15,8 @@ namespace QuotesSite.Models
         public string Quote { get; set; }
         [Required]
         public string Author { get; set; }
-        //public DateTime Date { get; set; }
+        public string Date { get; set; }
         public string Subject { get; set; }
-        public string citation { get; set; }
+        public string Citation { get; set; }
     }
 }

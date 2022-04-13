@@ -21,7 +21,7 @@ namespace QuotesSite.Controllers
         // GET: Quotes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Quotes.ToListAsync());
+            return View(await _context.Quotes.OrderBy(q=>q.Author).ToListAsync());
         }
 
         // GET: Quotes/Details/5

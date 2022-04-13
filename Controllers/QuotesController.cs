@@ -45,7 +45,7 @@ namespace QuotesSite.Controllers
         // GET: Quotes/Create
         public IActionResult Create()
         {
-            return View();
+            return View(new Quote());
         }
 
         // POST: Quotes/Create
@@ -54,6 +54,7 @@ namespace QuotesSite.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("QuoteId,QuoteText,Author,Date,Subject,Citation")] Quote quote)
+
         {
             if (ModelState.IsValid)
             {

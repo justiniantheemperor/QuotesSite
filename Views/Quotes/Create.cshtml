@@ -12,11 +12,12 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="QuoteId" class="control-label"></label>
-                <input asp-for="QuoteId" class="form-control" />
-                <span asp-validation-for="QuoteId" class="text-danger"></span>
-            </div>
+            @*<div class="form-group">
+            <label asp-for="QuoteId" class="control-label"></label>
+            <input asp-for="QuoteId" class="form-control" />
+            <span asp-validation-for="QuoteId" class="text-danger"></span>
+        </div>*@
+            <input type="hidden" asp-for="QuoteId"/>
             <div class="form-group">
                 <label asp-for="QuoteText" class="control-label"></label>
                 <input asp-for="QuoteText" class="form-control" />

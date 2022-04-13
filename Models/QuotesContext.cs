@@ -41,7 +41,7 @@ namespace QuotesSite.Models
                 .HasColumnName("QuoteID")
                 .ValueGeneratedNever();
 
-            entity.Property(e => e.Quote).IsRequired();
+            entity.Property(e => e.QuoteText).IsRequired();
 
             entity.Property(e => e.Author).IsRequired();
         });

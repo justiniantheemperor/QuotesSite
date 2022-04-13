@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace QuotesSite.Models
 {
-    public class Quotes
+    public class Quote
     {
         [Key]
         [Required]
-        public int QuoteID { get; set; }
+        public int QuoteId { get; set; }
         [Required]
-        public string Quote { get; set; }
+        public string QuoteText { get; set; }
         [Required]
         public string Author { get; set; }
         public string Date { get; set; }
